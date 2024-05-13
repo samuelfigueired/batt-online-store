@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="max-width: 500px; margin: auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='img/carrosel 1.jpg') }}" class="d-block w-100" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='img/carrosel 2.webp') }}" class="d-block w-100" alt="Carousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='img/carrosel 3.webp') }}" class="d-block w-100" alt="Carousel Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="m-3">
+            <h2 class="text-dark">Produtos disponíveis</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100 bg-dark text-light">
+                    <img src="{{ url_for('static', filename='img/card1.webp') }}" class="card-img-top" alt="Camiseta Legal">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Legal</h5>
+                        <p class="card-text">$20.00</p>
+                        <div class="form-group mb-3">
+                            <label for="sizeSelect1" class="form-label text-light">Tamanho:</label>
+                            <select class="form-select" id="sizeSelect1">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" 
+                                data-product-id="1" 
+                                data-product-name="Camiseta Legal" 
+                                data-product-price="20.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-light">
+                    <img src="{{ url_for('static', filename='img/card2.jpg') }}" class="card-img-top" alt="Camiseta Incrível">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Incrível</h5>
+                        <p class="card-text">$25.00</p>
+                        <div class="form-group mb-3">
+                            <label for="sizeSelect2" class="form-label text-light">Tamanho:</label>
+                            <select class="form-select" id="sizeSelect2">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" 
+                                data-product-id="2" 
+                                data-product-name="Camiseta Incrível" 
+                                data-product-price="25.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-light">
+                    <img src="{{ url_for('static', filename='img/card3.webp') }}" class="card-img-top" alt="Camiseta Estilosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Estilosa</h5>
+                        <p class="card-text">$30.00</p>
+                        <div class="form-group mb-3">
+                            <label for="sizeSelect3" class="form-label text-light">Tamanho:</label>
+                            <select class="form-select" id="sizeSelect3">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" 
+                                data-product-id="3" 
+                                data-product-name="Camiseta Estilosa" 
+                                data-product-price="30.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 bg-dark text-light">
+                    <img src="{{ url_for('static', filename='img/card4.jpg') }}" class="card-img-top" alt="Camiseta Moderna">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Moderna</h5>
+                        <p class="card-text">$35.00</p>
+                        <div class="form-group mb-3">
+                            <label for="sizeSelect4" class="form-label text-light">Tamanho:</label>
+                            <select class="form-select" id="sizeSelect4">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn" 
+                                data-product-id="4" 
+                                data-product-name="Camiseta Moderna" 
+                                data-product-price="35.00">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock conteudo %}

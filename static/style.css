@@ -1,0 +1,71 @@
+/* Estilos personalizados */
+body {
+    background-color: #ffffff; /* branco */
+    color: #352d2d; /* marrom escuro */
+}
+
+/* Estilizando a barra de navegação */
+.navbar {
+    background-color: #ffffff; /* branco */
+}
+
+.navbar-brand, .nav-link {
+    color: rgba(255, 255, 255, 0.974); /* marrom escuro */
+}
+
+.navbar-toggler-icon {
+    background-color: #eae7e7; /* marrom escuro */
+}
+
+/* Estilizando os botões */
+.btn-primary {
+    background-color: #101010; /* marrom escuro */
+    border-color: #ffffff; /* marrom escuro */
+}
+
+.btn-primary:hover {
+    background-color: #4d4949; /* marrom mais escuro */
+    border-color: #ffffff; /* marrom mais escuro */
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #ffffff; /* branco */
+    color: #352d2d; /* marrom escuro */
+}
+
+/* Estilizando links no rodapé */
+footer a {
+    color: #352d2d; /* marrom escuro */
+}
+
+footer a:hover {
+    color: #574b4b; /* marrom mais escuro */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* branco */
+}
+
+.navbar-toggler:hover {
+    background-color: #ffffff; /* branco */
+}
+
+.navbar-toggler:focus {
+
+    background-color: #ffffff; /* branco */
+}
+
+.navbar-toggler:active {
+    background-color: #ffffff; /* branco */
+}
+
+.navbar-toggler:active:focus {
+    background-color: #ffffff; /* branco */
+
+}
+
+.navbar-toggler:active:focus:active {
+    background-color: #ffffff; /* branco */
+}
+

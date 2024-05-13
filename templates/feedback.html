@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <section>
+        <main>
+            <br><br>
+            <form>
+                <label for="nomesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome">
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
+
+                <input type="submit" value="Enviar Formulário" class="botao-submit">
+            </form>
+        </main>
+    </section>
+
+    <style>
+        
+        
+        .caixa {
+            position: relative;
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        
+
+        .produtos {
+            width: 940px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .produtos li {
+            display: inline-block;
+            text-align: center;
+            width: 30%;
+            vertical-align: top;
+            color: #000000;
+            margin: 0 1.5%;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            border: 2px solid #000000;
+            border-radius: 15px;
+        }
+
+        .produtos li:hover {
+            border-color: #C78C19;
+        }
+
+        .produtos li:hover h2 {
+            font-size: 34px;
+        }
+
+        .produtos li:active {
+            border-color: #088C19;
+        }
+
+        .produtos h2 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .produto-descricao {
+            font-size: 18px;
+        }
+
+        .preco-produto {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background: url("bg.jpg");
+            padding: 20px 0;
+        }
+
+        .copyright {
+            color: #FFFFFF;
+            font-size: 13px;
+            margin: 20px 0 0;
+        }
+
+        main {
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin: 40px 0;
+        }
+
+        form label {
+            display: block;
+            font-size: 22px;
+            margin: 0 0 10px;
+        }
+
+        form input {
+            display: block;
+            margin: 0 0 15px;
+            padding: 12px 20px;
+            width: 50%;
+        }
+
+        .botao-submit {
+            border-color: #9b9999;
+            background-color: #BBBBBB;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .botao-submit:hover {
+            background-color: #cecece;
+            border: none;
+            padding: 14px 22px;
+        }
+    </style>
+{% endblock conteudo %}

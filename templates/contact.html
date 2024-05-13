@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <head>
+        <title>Formulário de Contato</title>
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+        
+        body{
+            background-color: #333333;
+        }
+        .form {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 15px;
+            background-color: #333333; /* Cor de fundo escura */
+            color: #FFFFFF; /* Cor do texto */
+            text-align: center; /* Centralizar conteúdo */
+        }
+
+        main {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #222222; /* Cor de fundo mais escura */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Sombra */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #66FFFF;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #666666; /* Cor da borda */
+            background-color: #444444; /* Cor de fundo do input */
+            color: #FFFFFF; /* Cor do texto dentro do input */
+        }
+
+        input:hover, textarea:hover, input:focus, textarea:focus {
+            border-color: #66FFFF; /* Cor da borda ao interagir */
+            box-shadow: 0 0 10px rgba(102, 255, 255, 0.5); /* Sombra ao interagir */
+        }
+
+        .enviar {
+            background-color: #66FFFF;
+            height: 40px;
+            width: 100px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            color: black; /* Cor do texto do botão */
+            cursor: pointer;
+        }
+
+        textarea {
+            height: 120px;
+            line-height: 20px;
+            resize: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #66FFFF; /* Cor do texto das labels */
+        }
+    </style>
+
+    <main>
+        <form name="meu_form" onsubmit="return Enviar()">
+            <h1>Entre em contato</h1>
+            
+            <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome">
+            <label for="nome">Nome</label>
+            
+            <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone">
+            <label for="fone">Fone</label>
+            
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email">
+            <label for="email">Email</label>
+            
+            <textarea placeholder="Deixe sua opinião"></textarea>
+            
+            <input type="submit" class="enviar" value="Enviar">
+        </form>
+    </main>
+
+    <script>
+        function Enviar() {
+            var nome = document.getElementById("nomeid");
+
+            if (nome.value.trim() !== "") {
+                alert('Obrigado, Sr(a). ' + nome.value + '! Seus dados foram encaminhados com sucesso.');
+                return true; // Permitir envio do formulário
+            } else {
+                alert('Por favor, preencha o campo Nome.');
+                return false; // Impedir envio do formulário
+            }
+        }
+    </script>
+{% endblock conteudo %}

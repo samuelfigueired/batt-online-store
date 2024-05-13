@@ -1,0 +1,299 @@
+
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <section>
+        <div class="container">
+            <div class="m-3">
+                <h2 class="text-dark">Produtos disponíveis</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="{{ url_for('static', filename='img/card1.webp') }}" class="card-img-top" alt="Camiseta Legal">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Legal</h5>
+                            <p class="card-text">$20.00</p>
+
+                            <div class="rating-container">
+                                <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                <label for="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                <label for="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                <label for="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                <label for="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-5" name="star-radio" value="star-1">
+                                <label for="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="sizeSelect1" class="form-label text-light">Tamanho:</label>
+                                <select class="form-select" id="sizeSelect1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-product-id="1" 
+                                    data-product-name="Camiseta Legal" 
+                                    data-product-price="20.00">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="{{ url_for('static', filename='img/card2.jpg') }}" class="card-img-top" alt="Camiseta Incrível">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Incrível</h5>
+                            <p class="card-text">$25.00</p>
+                            <div class="rating-container">
+                                <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                <label for="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                <label for="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                <label for="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                <label for="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-5" name="star-radio" value="star-1">
+                                <label for="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="sizeSelect2" class="form-label text-light">Tamanho:</label>
+                                <select class="form-select" id="sizeSelect2">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-product-id="2" 
+                                    data-product-name="Camiseta Incrível" 
+                                    data-product-price="25.00">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="{{ url_for('static', filename='img/card3.webp') }}" class="card-img-top" alt="Camiseta Estilosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Estilosa</h5>
+                            <p class="card-text">$30.00</p>
+                            
+                            <div class="rating-container">
+                                <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                <label for="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                <label for="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                <label for="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                <label for="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-5" name="star-radio" value="star-1">
+                                <label for="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="sizeSelect3" class="form-label text-light">Tamanho:</label>
+                                <select class="form-select" id="sizeSelect3">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-product-id="3" 
+                                    data-product-name="Camiseta Estilosa" 
+                                    data-product-price="30.00">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="{{ url_for('static', filename='img/card4.jpg') }}" class="card-img-top" alt="Camiseta Moderna">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Moderna</h5>
+                            <p class="card-text">$35.00</p>
+
+                            <div class="rating-container">
+                                <input type="radio" id="star-1" name="star-radio" value="star-1">
+                                <label for="star-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-2" name="star-radio" value="star-1">
+                                <label for="star-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-3" name="star-radio" value="star-1">
+                                <label for="star-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-4" name="star-radio" value="star-1">
+                                <label for="star-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                                <input type="radio" id="star-5" name="star-radio" value="star-1">
+                                <label for="star-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                                </label>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="sizeSelect4" class="form-label text-light">Tamanho:</label>
+                                <select class="form-select" id="sizeSelect4">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-product-id="4" 
+                                    data-product-name="Camiseta Moderna" 
+                                    data-product-price="35.00">
+                                Adicionar ao Carrinho
+                            </button>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+                    /* Estilo para a classe rating */
+    .rating-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 0.3rem;
+        --stroke: #666;
+        --fill: #ffc73a;
+    }
+
+    .rating-container input {
+        appearance: unset;
+    }
+
+    .rating-container label {
+        cursor: pointer;
+    }
+
+    .rating-container svg {
+        width: 2rem;
+        height: 2rem;
+        overflow: visible;
+        fill: transparent;
+        stroke: var(--stroke);
+        stroke-linejoin: bevel;
+        stroke-dasharray: 12;
+        animation: idle 4s linear infinite;
+        transition: stroke 0.2s, fill 0.5s;
+    }
+
+    @keyframes idle {
+        from {
+            stroke-dashoffset: 24;
+        }
+    }
+
+    .rating-container label:hover svg {
+        stroke: var(--fill);
+    }
+
+    .rating-container input:checked ~ label svg {
+        transition: 0s;
+        animation: idle 4s linear infinite, yippee 0.75s backwards;
+        fill: var(--fill);
+        stroke: var(--fill);
+        stroke-opacity: 0;
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    @keyframes yippee {
+        0% {
+            transform: scale(1);
+            fill: var(--fill);
+            fill-opacity: 0;
+            stroke-opacity: 1;
+            stroke: var(--stroke);
+            stroke-dasharray: 10;
+            stroke-width: 1px;
+            stroke-linejoin: bevel;
+        }
+
+        30% {
+            transform: scale(0);
+            fill: var(--fill);
+            fill-opacity: 0;
+            stroke-opacity: 1;
+            stroke: var(--stroke);
+            stroke-dasharray: 10;
+            stroke-width: 1px;
+            stroke-linejoin: bevel;
+        }
+
+        30.1% {
+            stroke: var(--fill);
+            stroke-dasharray: 0;
+            stroke-linejoin: miter;
+            stroke-width: 8px;
+        }
+
+        60% {
+            transform: scale(1.2);
+            fill: var(--fill);
+        }
+    }
+
+    </style>
+{% endblock conteudo %}
